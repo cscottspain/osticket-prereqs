@@ -36,13 +36,25 @@ Download them all [here](https://drive.google.com/drive/u/1/folders/1APMfNyfNzcx
 Part 1: Create Virtual Machine in Azure
 
 - Create a Resource Group
+<p>
+<img src="https://i.imgur.com/1NvBOtA.png" alt="Azure Virtual Machine Window"/>
+</p>
+<p>
+
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPU's 
 - When creating the VM, allow it to create a new Virtual Network a.k.a. VNET
 
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QpqqamL.png" alt="Azure Virtual Machine Window"/>
+</p>
+<p>
+<p>
+<img src="https://i.imgur.com/iUKdfks.png" alt="Azure Virtual Machine Details Window"/>
+</p>
+<p>
+<img src="https://i.imgur.com/Rz130YK.png" alt="Azure Virtual Machine Details Window 2"/>
 </p>
 <p>
 Part 2: Installation
@@ -50,19 +62,27 @@ Part 2: Installation
   
 - Connect to your Virtual Machine with Remote Desktop
 - Install / Enable IIS in Windows
-- Install Web Platform Installer (download from within lab files: link)
-  
-    - Open after installation
-    - Add MySQL 5.5 (it will ask for credentials to be created later)
-      - Name: root
-      - Password: "Your Password"
-    - Add All simple versions of x86 PHP up until 7.3
-    - Fix any failures if required (download from within lab files: link)
-- Install PHP Version 7.3.8 (or any other version if necessary, archives)
-- Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)
+<p>
+<img src="https://i.imgur.com/70QjWeh.png" alt="IIS Enable Window"/>
+</p>
+- Install Web Platform Installer
+<p>
+<img src="https://i.imgur.com/0n9Lt3g.png" alt="Web Platform Installer Icon"/>
+</p>
+	- Open after installation </p>
+	- Add MySQL 5.5 (it will ask for credentials to be created later) </p>
+   	-  Name: root </p>
+	-  Password: "Your Password" </p>	
+- Add All simple versions of x86 PHP up until 7.3 < /p>
+  	  - Fix any failures if required download from within lab files linked up above</p>
+<p>
+<img src="https://i.imgur.com/0n9Lt3g.png" alt="Web Platform Installer Icon"/>
+</p>
+- Install PHP Version 7.3.8 (or any other version if necessary, archives
+- Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop
 - Install Microsoft Visual C++ 2009 Redistributable Package
 - Install osTicket v1.15.8
-    - Download osTicket (download from within lab files: link)
+    - Download osTicket (download from within lab files: link
     - Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
     - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
 - Reload IIS (Open IIS, Stop and Start the server)
