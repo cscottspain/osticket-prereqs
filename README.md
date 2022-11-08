@@ -69,12 +69,16 @@ Part 2: Installation
     <li>
         <p>Install Web Platform Installer (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
         <ul>
+          <p>
+<img src="https://i.imgur.com/0n9Lt3g.png" alt="Web Platform Installer Icon"/>
+</p>
             <li>
                 <p>Open after installation</p>
             </li>
             <li>
                 <p>Add MySQL 5.5 (it will ask for credentials to be created later)</p>
                 <ol>
+                  <a href="https://imgur.com/RBSA200"><img src="https://i.imgur.com/RBSA200.png" title="source: imgur.com" /></a>
                     <li>
                         <p>Name: root</p>
                     </li>
@@ -86,7 +90,7 @@ Part 2: Installation
             <li>
                 <p>Add All simple versions of x86 PHP up until 7.3</p>
             </li>
-            <li>
+<a href="https://imgur.com/VxkybZd"><img src="https://i.imgur.com/VxkybZd.png" title="source: imgur.com" /></a>            <li>
                 <p>Fix any failures if required (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
                 <ul>
                     <li>
