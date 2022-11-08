@@ -65,82 +65,175 @@ Part 2: Installation
 <p>
 <img src="https://i.imgur.com/70QjWeh.png" alt="IIS Enable Window"/>
 </p>
-- Install Web Platform Installer
-<p>
-<img src="https://i.imgur.com/0n9Lt3g.png" alt="Web Platform Installer Icon"/>
-</p>
-	- Open after installation </p>
-	- Add MySQL 5.5 (it will ask for credentials to be created later) </p>
-   	-  Name: root </p>
-	-  Password: "Your Password" </p>	
-- Add All simple versions of x86 PHP up until 7.3 < /p>
-  	  - Fix any failures if required download from within lab files linked up above</p>
-<p>
-<img src="https://i.imgur.com/0n9Lt3g.png" alt="Web Platform Installer Icon"/>
-</p>
-- Install PHP Version 7.3.8 (or any other version if necessary, archives
-- Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop
-- Install Microsoft Visual C++ 2009 Redistributable Package
-- Install osTicket v1.15.8
-    - Download osTicket (download from within lab files: link
-    - Extract and copy the “upload” folder INTO c:\inetpub\wwwroot
-    - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
-- Reload IIS (Open IIS, Stop and Start the server)
-    - Go to sites -> Default -> osTicket
-    - On the right, click “Browse *:80”
-- Enable Extensions in IIS: Note that some extensions are not enabled
-  - Go back to IIS, sites -> Default -> osTicket
-  - Double-click PHP Manager
-  - Click “Enable or disable an extension”
-    - Enable: php_imap.dll
-    - Enable: php_intl.dll
-    - Enable: php_opcache.dll
-- Refresh the osTicket site in your browse, observe the changes
-- Rename:
-	- From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
-	- To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
-- Assign Permissions: ost-config.php
-    - Disable inheritance -> Remove All
-    - New Permissions -> Everyone -> All
-- Continue Setting up osTicket in the browser (click Continue)
-    - Name Helpdesk
-    - Default email (receives email from customers)
-- Download and Install HeidiSQL (download from within lab files: link)
-    - Create a new session, root/Password1
-    - Connect to the session
-    - Create a database called “osTicket”
-- Continue Setting up osticket in the browser
-- MySQL Database: osTicket
-    - MySQL Username: root
-    - MySQL Password: "Your Password"
-Click “Install Now!”
-Congratulations, hopefully it is installed with no errors!
-Part 3: Clean up
-  - Delete: C:\inetpub\wwwroot\osTicket\setup
-  - Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
-  - Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)
-
-Notes:
-Browse to your help desk login page: http://localhost/osTicket/scp/login.php  
-End Users osTicket URL: http://localhost/osTicket/ 
-  
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<ul>
+    <li>
+        <p>Install Web Platform Installer (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
+        <ul>
+            <li>
+                <p>Open after installation</p>
+            </li>
+            <li>
+                <p>Add MySQL 5.5 (it will ask for credentials to be created later)</p>
+                <ol>
+                    <li>
+                        <p>Name: root</p>
+                    </li>
+                    <li>
+                        <p>Password: Password1</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>Add All simple versions of x86 PHP up until 7.3</p>
+            </li>
+            <li>
+                <p>Fix any failures if required (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
+                <ul>
+                    <li>
+                        <p>Install PHP Version 7.3.8 (or any other version if necessary,&nbsp;<a href="https://windows.php.net/downloads/releases/archives/">archives</a>)</p>
+                    </li>
+                    <li>
+                        <p>Install PHP Manager 1.5.0 for IIS 10 (folder you unzipped on the desktop)</p>
+                    </li>
+                    <li>
+                        <p>Install Microsoft Visual C++ 2009 Redistributable Package</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Install osTicket v1.15.8</p>
+        <ul>
+            <li>
+                <p>Download osTicket (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
+            </li>
+            <li>
+                <p>Extract and copy the &ldquo;upload&rdquo; folder INTO c:\inetpub\wwwroot</p>
+            </li>
+            <li>
+                <p>Within c:\inetpub\wwwroot, Rename &ldquo;upload&rdquo; to &ldquo;osTicket&rdquo;</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Reload IIS (Open IIS, Stop and Start the server)</p>
+        <ul>
+            <li>
+                <p>Go to sites -&gt; Default -&gt; osTicket</p>
+            </li>
+            <li>
+                <p>On the right, click &ldquo;Browse *:80&rdquo;</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Enable Extensions in IIS: Note that some extensions are not enabled</p>
+        <ul>
+            <li>
+                <p>Go back to IIS, sites -&gt; Default -&gt; osTicket</p>
+            </li>
+            <li>
+                <p>Double-click PHP Manager</p>
+            </li>
+            <li>
+                <p>Click &ldquo;Enable or disable an extension&rdquo;</p>
+                <ul>
+                    <li>
+                        <p>Enable: php_imap.dll</p>
+                    </li>
+                    <li>
+                        <p>Enable: php_intl.dll</p>
+                    </li>
+                    <li>
+                        <p>Enable: php_opcache.dll</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Refresh the osTicket site in your browse, observe the changes</p>
+    </li>
+    <li>
+        <p>Rename:<br>&nbsp; &nbsp;&nbsp;From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php<br>&nbsp; &nbsp;&nbsp;To: C:\inetpub\wwwroot\osTicket\include\ost-config.php</p>
+    </li>
+    <li>
+        <p>Assign Permissions: ost-config.php</p>
+        <ul>
+            <li>
+                <p>Disable inheritance -&gt; Remove All</p>
+            </li>
+            <li>
+                <p>New Permissions -&gt; Everyone -&gt; All</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Continue Setting up osTicket in the browser (click Continue)</p>
+        <ul>
+            <li>
+                <p>Name Helpdesk</p>
+            </li>
+            <li>
+                <p>Default email (receives email from customers)</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Download and Install HeidiSQL (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
+        <ul>
+            <li>
+                <p>Create a new session, root/Password1</p>
+            </li>
+            <li>
+                <p>Connect to the session</p>
+            </li>
+            <li>
+                <p>Create a database called &ldquo;osTicket&rdquo;</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Continue Setting up osticket in the browser</p>
+    </li>
+    <li>
+        <p>MySQL Database: osTicket</p>
+        <ul>
+            <li>
+                <p>MySQL Username: root</p>
+            </li>
+            <li>
+                <p>MySQL Password: Password1</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Click &ldquo;Install Now!&rdquo;</p>
+    </li>
+    <li>
+        <p>Congratulations, hopefully it is installed with no errors!</p>
+    </li>
+    <li>
+        <p>Clean up</p>
+        <ul>
+            <li>
+                <p>Delete: C:\inetpub\wwwroot\osTicket\setup</p>
+            </li>
+            <li>
+                <p>Set Permissions to &ldquo;Read&rdquo; only: C:\inetpub\wwwroot\osTicket\include\ost-config.php</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Login to the osTicket Admin Panel&nbsp;(<a href="http://localhost/osTicket/scp/login.php">http://localhost/osTicket/scp/login.php</a>)</p>
+    </li>
+</ul>
+<p><br></p>
+<p>Notes:</p>
+<ul>
+    <li>
+        <p>Browse to your help desk login page:&nbsp;<a href="http://localhost/osTicket/scp/login.php">http://localhost/osTicket/scp/login.php</a> &nbsp;</p>
+    </li>
+    <li>End Users osTicket URL:&nbsp;<a href="http://localhost/osTicket/">http://localhost/osTicket/</a>&nbsp;</li>
+</ul>
