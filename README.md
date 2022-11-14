@@ -91,7 +91,8 @@ Part 2: Installation
                 <p>Add All simple versions of x86 PHP up until 7.3</p>
             </li>
 <a href="https://imgur.com/VxkybZd"><img src="https://i.imgur.com/VxkybZd.png" title="source: imgur.com" /></a>            <li>
-                <p>Fix any failures if required (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
+          <a href="https://imgur.com/KRjgavx"><img src="https://i.imgur.com/KRjgavx.png" title="source: imgur.com" /></a>      
+          <p>Fix any failures if required (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
                 <ul>
                     <li>
                         <p>Install PHP Version 7.3.8 (or any other version if necessary,&nbsp;<a href="https://windows.php.net/downloads/releases/archives/">archives</a>)</p>
