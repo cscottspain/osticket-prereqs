@@ -108,137 +108,182 @@ Part 2: Installation
         </ul>
     </li>
     <li>
-        <p>Install osTicket v1.15.8</p>
-        <ul>
+       <ul dir="auto">
+    <li>
+        <p dir="auto">Install osTicket v1.15.8</p>
+        <ul dir="auto">
             <li>
-                <p>Download osTicket (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
+                <p dir="auto">Download osTicket (download from within lab files: <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6" rel="nofollow">link</a>)</p>
             </li>
             <li>
-                <p>Extract and copy the &ldquo;upload&rdquo; folder INTO c:\inetpub\wwwroot</p>
+                <p dir="auto">Extract and copy the &ldquo;upload&rdquo; folder INTO c:\inetpub\wwwroot</p>
             </li>
             <li>
-                <p>Within c:\inetpub\wwwroot, Rename &ldquo;upload&rdquo; to &ldquo;osTicket&rdquo;</p>
+                <p dir="auto">Within c:\inetpub\wwwroot, Rename &ldquo;upload&rdquo; to &ldquo;osTicket&rdquo;</p>
             </li>
         </ul>
     </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668470640.png" width="660" height="455"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668470659.png" width="677" height="536"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668470685.png" width="652" height="532"></p>
+<ul dir="auto">
     <li>
-        <p>Reload IIS (Open IIS, Stop and Start the server)</p>
-        <ul>
+        <p dir="auto">Reload IIS (Open IIS, Stop and Start the server)</p>
+        <ul dir="auto">
             <li>
-                <p>Go to sites -&gt; Default -&gt; osTicket</p>
+                <p dir="auto">Go ** sites -&gt; Default -&gt; osTicket</p>
             </li>
             <li>
-                <p>On the right, click &ldquo;Browse *:80&rdquo;</p>
+                <p dir="auto">On the right, click &ldquo;Browse *:80&rdquo;</p>
             </li>
         </ul>
     </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668470762.png" width="883" height="630"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471245.png" width="883" height="864"></p>
+<ul dir="auto">
     <li>
-        <p>Enable Extensions in IIS: Note that some extensions are not enabled</p>
-        <ul>
+        <p dir="auto">Enable Extensions in IIS: Note that some extensions are not enabled</p>
+        <ul dir="auto">
             <li>
-                <p>Go back to IIS, sites -&gt; Default -&gt; osTicket</p>
+                <p dir="auto">Go back to IIS, sites -&gt; Default -&gt; osTicket</p>
             </li>
             <li>
-                <p>Double-click PHP Manager</p>
+                <p dir="auto">Double-click PHP Manager</p>
             </li>
             <li>
-                <p>Click &ldquo;Enable or disable an extension&rdquo;</p>
-                <ul>
+                <p dir="auto">Click &ldquo;Enable or disable an extension&rdquo;</p>
+                <ul dir="auto">
                     <li>
-                        <p>Enable: php_imap.dll</p>
+                        <p dir="auto">Enable: php_imap.dll</p>
                     </li>
                     <li>
-                        <p>Enable: php_intl.dll</p>
+                        <p dir="auto">Enable: php_intl.dll</p>
                     </li>
                     <li>
-                        <p>Enable: php_opcache.dll</p>
+                        <p dir="auto">Enable: php_opcache.dll</p>
                     </li>
                 </ul>
             </li>
         </ul>
     </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668470961.png" width="598" height="653"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668470973.png" width="418" height="409"></p>
+<ul dir="auto">
     <li>
-        <p>Refresh the osTicket site in your browse, observe the changes</p>
-    </li>
-    <li>
-        <p>Rename:<br>&nbsp; &nbsp;&nbsp;From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php<br>&nbsp; &nbsp;&nbsp;To: C:\inetpub\wwwroot\osTicket\include\ost-config.php</p>
-    </li>
-    <li>
-        <p>Assign Permissions: ost-config.php</p>
-        <ul>
-            <li>
-                <p>Disable inheritance -&gt; Remove All</p>
-            </li>
-            <li>
-                <p>New Permissions -&gt; Everyone -&gt; All</p>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <p>Continue Setting up osTicket in the browser (click Continue)</p>
-        <ul>
-            <li>
-                <p>Name Helpdesk</p>
-            </li>
-            <li>
-                <p>Default email (receives email from customers)</p>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <p>Download and Install HeidiSQL (download from within lab files:&nbsp;<a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">link</a>)</p>
-        <ul>
-            <li>
-                <p>Create a new session, root/Password1</p>
-            </li>
-            <li>
-                <p>Connect to the session</p>
-            </li>
-            <li>
-                <p>Create a database called &ldquo;osTicket&rdquo;</p>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <p>Continue Setting up osticket in the browser</p>
-    </li>
-    <li>
-        <p>MySQL Database: osTicket</p>
-        <ul>
-            <li>
-                <p>MySQL Username: root</p>
-            </li>
-            <li>
-                <p>MySQL Password: Password1</p>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <p>Click &ldquo;Install Now!&rdquo;</p>
-    </li>
-    <li>
-        <p>Congratulations, hopefully it is installed with no errors!</p>
-    </li>
-    <li>
-        <p>Clean up</p>
-        <ul>
-            <li>
-                <p>Delete: C:\inetpub\wwwroot\osTicket\setup</p>
-            </li>
-            <li>
-                <p>Set Permissions to &ldquo;Read&rdquo; only: C:\inetpub\wwwroot\osTicket\include\ost-config.php</p>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <p>Login to the osTicket Admin Panel&nbsp;(<a href="http://localhost/osTicket/scp/login.php">http://localhost/osTicket/scp/login.php</a>)</p>
+        <p dir="auto">Refresh the osTicket site in your browse, observe the changes</p>
     </li>
 </ul>
-<p><br></p>
-<p>Notes:</p>
-<ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471002.png" width="327" height="149"></p>
+<ul dir="auto">
     <li>
-        <p>Browse to your help desk login page:&nbsp;<a href="http://localhost/osTicket/scp/login.php">http://localhost/osTicket/scp/login.php</a> &nbsp;</p>
+        <p dir="auto">Rename:<br>&nbsp; &nbsp; From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php<br>&nbsp; &nbsp; To: C:\inetpub\wwwroot\osTicket\include\ost-config.php</p>
     </li>
-    <li>End Users osTicket URL:&nbsp;<a href="http://localhost/osTicket/">http://localhost/osTicket/</a>&nbsp;</li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471021.png" width="499" height="374"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471035.png" width="498" height="366"></p>
+<ul dir="auto">
+    <li>
+        <p dir="auto">Assign Permissions: ost-config.php</p>
+        <ul dir="auto">
+            <li>
+                <p dir="auto">Disable inheritance -&gt; Remove All</p>
+            </li>
+            <li>
+                <p dir="auto">New Permissions -&gt; Everyone -&gt; All</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471138.png" width="696" height="466"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471150.png" width="604" height="408"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471161.png" width="718" height="463"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471171.png" width="361" height="201"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471181.png" width="604" height="409"></p>
+<ul dir="auto">
+    <li>
+        <p dir="auto">Continue Setting up osTicket in the browser (click Continue)</p>
+        <ul dir="auto">
+            <li>
+                <p dir="auto">**** Helpdesk</p>
+            </li>
+            <li>
+                <p dir="auto">Default email (receives email from customers)</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471324.png" width="1536" height="864"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471346.png" width="883" height="864"></p>
+<ul dir="auto">
+    <li>
+        <p dir="auto">Download and install HeidiSQL (download from within lab files: <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6" rel="nofollow">link</a>)</p>
+        <ul dir="auto">
+            <li>
+                <p dir="auto">Create a new session, root/&quot;Password&quot;</p>
+            </li>
+            <li>
+                <p dir="auto">Connect to the session</p>
+            </li>
+            <li>
+                <p dir="auto">Create a database called &ldquo;osTicket&rdquo;</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471718.png" width="735" height="468"></p>
+<ul dir="auto">
+    <li>
+        <p dir="auto">Continue Setting up osTicket in the browser</p>
+    </li>
+    <li>
+        <p dir="auto">MySQL Database: osTicket</p>
+        <ul dir="auto">
+            <li>
+                <p dir="auto">MySQL Username: root</p>
+            </li>
+            <li>
+                <p dir="auto">MySQL Password: &quot;Password&quot;</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471825.png" width="883" height="792"></p>
+<ul dir="auto">
+    <li>
+        <p dir="auto">Click &ldquo;Install Now!&rdquo;</p>
+    </li>
+    <li>
+        <p dir="auto">Congratulations, hopefully it is installed with no errors!</p>
+    </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471860.png" width="650" height="499"></p>
+<ul dir="auto">
+    <li>
+        <p dir="auto">Clean up</p>
+        <ul dir="auto">
+            <li>
+                <p dir="auto">Delete: C:\inetpub\wwwroot\osTicket\setup</p>
+            </li>
+            <li>
+                <p dir="auto">Set Permissions to &ldquo;Read&rdquo; only: C:\inetpub\wwwroot\osTicket\include\ost-config.php</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668471954.png" width="603" height="618"></p>
+<p><img src="https://myfiles.space/user_files/136342_a1cddde58552a220/136342_custom_files/img1668472027.png" width="883" height="864"></p>
+<ul dir="auto">
+    <li>
+        <p dir="auto">Login to the osTicket Admin Panel&nbsp;(<a href="http://localhost/osTicket/scp/login.php" rel="nofollow">http://localhost/osTicket/scp/login.php</a>)</p>
+    </li>
+</ul>
+<p dir="auto">Notes:</p>
+<ul dir="auto">
+    <li>
+        <p dir="auto">Browse to your help desk login page: <a href="http://localhost/osTicket/scp/login.php" rel="nofollow">http://localhost/osTicket/scp/login.php</a> &nbsp;</p>
+    </li>
+    <li>End Users osTicket URL: <a href="http://localhost/osTicket/" rel="nofollow">http://localhost/osTicket/</a>&nbsp;</li>
 </ul>
